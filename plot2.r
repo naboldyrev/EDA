@@ -2,7 +2,13 @@
 colClss <- c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric")
 
 
-#reading the data, interpreting '?' as Na's
+#reading the data directly from the host, interpreting '?' as Na's
+
+zip_file <- paste0(getwd(), '/household_power_consumption.zip')
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip", destfile = zip_file, method = "curl")
+unzip(zip_file)
+
+
 consumption <- read.csv("data/household_power_consumption.txt", 
                         colClasses = colClss, sep = ';', na.strings=c("?"),
                         nrows=2075259)

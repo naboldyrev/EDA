@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Introduction
 
 This assignment uses data from
@@ -113,7 +112,3 @@ The four plots that you will need to construct are shown below.
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
-=======
-# EDA
-Coursera, Exploratory Data Analysis
->>>>>>> fd0076892eb804c20468c82480102e31250d30d7
